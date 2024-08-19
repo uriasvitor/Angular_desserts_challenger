@@ -1,0 +1,198 @@
+@import "../styles.scss";
+
+.container {
+    padding: 3.125rem 6.25rem 0 6.25rem;
+    display: flex;
+    justify-content: space-between;
+
+    .main-side {
+        width: 80%;
+
+        h1 {
+            font-family: $f-primary;
+            margin: 0 0 2.1875rem 0;
+            font-size: 40px;
+        }
+
+        .desserts {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .card:first-child {
+                margin-left: 0;
+            }
+
+            .card {
+                width: 15.75rem;
+                position: relative;
+                margin: 0 1rem 1rem 0;
+
+                .image {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        height: 15.625rem;
+                        border-radius: 0.625rem;
+                    }
+                }
+
+                .add-to-cart {
+                    width: 100%;
+                    top: 88%;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    button {
+                      width: initial;
+                      height: initial;
+                      display: flex;
+                      padding: 0.875rem 2rem 0.875rem 2rem;
+                      font-family: $f-primary;
+                      font-weight: 500;
+                      border-radius: 1.875rem;
+                      border: 0.0625rem solid $rose-400;
+                      cursor: pointer;
+
+                      img {
+                            width: inherit;
+                            height: inherit;
+                        }
+
+                        span {
+                            font-size: 1rem;
+                            margin: 0 0.3125rem;
+                        }
+
+                        &:hover {
+                            border: 0.0625rem solid $rose-500;
+
+                            span {
+                                color: $rose-500;
+                            }
+                        }
+                    }
+                }
+
+                .description {
+                    margin-top: 2.5rem;
+                    font-family: $f-primary;
+
+                    .categorie {
+                        color: #b1b1b1;
+                    }
+
+                    .title {
+                        font-weight: 500;
+                        color: black;
+                        margin: 0.3125rem 0;
+                    }
+
+                    .price {
+                        color: $red;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    .cart {
+        width: 28.125rem;
+        height: 100%;
+        font-family: $f-primary;
+        padding: 25px;
+        background-color: #ffff;
+        border-radius: 12px;
+
+        h2 {
+            color: $red;
+            font-weight: 700;
+            font-size: 1.5625rem;
+        }
+
+        .items {
+            display: flex;
+            flex-direction: column;
+
+            .item {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: .9375rem 0 0 0;
+                border-bottom: .0625rem solid #b1b1b1;
+
+                .description {
+                    .price-info {
+                        padding: .625rem 0 .625rem 0;
+
+                        span:nth-child(1) {
+                            font-weight: 700;
+                            color: $red;
+                        }
+
+                        span:nth-child(2) {
+                            color: #8b8b8b;
+                            margin: 0 0.9375rem;
+                        }
+
+                        span:nth-child(3) {
+                            color: #707070;
+                        }
+                    }
+                }
+
+                .close-btn{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .order {
+            display: flex;
+            justify-content: space-between;
+            margin: 1.875rem 0;
+
+            .price {
+                font-size: 1rem;
+                font-weight: 700;
+            }
+        }
+
+        .ad {
+            display: flex;
+            align-items: center;
+            padding: 1.25rem;
+            border-radius: .75rem;
+            background-color: $rose-100;
+
+            .icon{
+                margin: 0 .9375rem;
+            }
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .confirm-btn{
+            width: 100%;
+            margin-top: 1.5625rem;
+            border: none;
+            border-radius: 1.25rem;
+            padding: 1.25rem;
+            color: #ffff;
+            background-color: $red;
+            font-size: 1.125rem;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #830101;
+            }
+        }
+    }
+}

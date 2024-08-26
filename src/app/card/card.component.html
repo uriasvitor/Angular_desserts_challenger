@@ -8,11 +8,11 @@
           <span>Add to cart</span>
         </div>
         <div class="amount">
-          <button class="minus">
+          <button class="minus" (click)="decrementQuantity($event)">
             <img src="./assets/img/icon-decrement-quantity.svg">
           </button>
-          <div class="counter">1</div>
-          <button class="plus">
+          <div class="counter">{{counter()}}</div>
+          <button class="plus" (click)="incrementQuantity($event)">
             <img src="./assets/img/icon-increment-quantity.svg">
           </button>
         </div>

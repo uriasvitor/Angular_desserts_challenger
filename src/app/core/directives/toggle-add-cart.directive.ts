@@ -14,7 +14,7 @@ export class ToggleCartDirective {
     this.toggleClass();
   }
 
-  private toggleClass(){
+  toggleClass(){
     const element = this.el.nativeElement;
     const parent = this.renderer.parentNode(element)
 

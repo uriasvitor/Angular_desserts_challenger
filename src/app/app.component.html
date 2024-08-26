@@ -1,59 +1,13 @@
 <div class="container">
   <div class="main-side">
     <h1>Desserts</h1>
-
-    <div class="desserts">
-      <div class="card">
-        <div class="image">
-          <img src="./assets/img/image-waffle-tablet.jpg" alt="" />
-          <div class="add-to-cart">
-            <button>
-              <img src="./assets/img/icon-add-to-cart.svg">
-              <span>Add to cart</span>
-            </button>
-            <div class="toggle" hidden>
-              <div class="plus">+</div>
-              <div class="minus">-</div>
-            </div>
-          </div>
-        </div>
-        <div class="description">
-          <p class="categorie">Waffle</p>
-          <p class="title">Waffle with Berries</p>
-          <p class="price">$6.50</p>
-        </div>
-      </div>
+    <div class="cards">
+      <app-card></app-card>
+      <app-card></app-card>
+      <app-card></app-card>
+      <app-card></app-card>
+      <app-card></app-card>
     </div>
   </div>
-  <div class="cart">
-      <h2>Your cart (7)</h2>
-
-      <div class="items">
-        <div class="item">
-          <div class="description">
-            <p class="name">Classic Tiramisu</p>
-            <div class="price-info">
-              <span>2x</span>
-              <span>$7.00</span>
-              <span>$28.00</span>
-            </div>
-          </div>
-          <div class="close-btn">
-            <img src="./assets/img/icon-remove-item.svg" alt="" srcset="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="order">
-        <p>Order total</p>
-        <p class="price">$46.50</p>
-      </div>
-
-      <div class="ad">
-        <img class="icon" src="./assets/img/icon-carbon-neutral.svg" alt="" srcset="">
-        <p>This is a <span>carbon-neutral</span> delivery</p>
-      </div>
-
-      <button class="confirm-btn">Confirm Order</button>
-  </div>
+  <app-cart></app-cart>
 </div>
